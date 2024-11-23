@@ -14,6 +14,14 @@ This repository contains a blog built using [Gatsby](https://www.gatsbyjs.com/),
 
 ---
 
+## Deployed Site
+
+You can view the deployed site here:
+
+**[Live Demo](https://fsfrahmad.github.io/gatsby-site/)**
+
+---
+
 ## Project Structure
 
 ### Key Directories:
