@@ -1,12 +1,21 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 const HomePage = ({ data }) => (
   <main>
     <h1>{data.site.siteMetadata.title}</h1>
     <p>{data.site.siteMetadata.description}</p>
-    <Link to="/about">Go to About Page</Link>
+    <Helmet>
+      <title>My Gatsby Site</title>
+      <meta
+        name="description"
+        content="This is a Gatsby site optimized for SEO"
+      />
+      <meta property="og:title" content="My Gatsby Site" />
+      <meta property="og:description" content="Optimized for SEO with Gatsby" />
+    </Helmet>
   </main>
 )
 export const query = graphql`
@@ -18,5 +27,5 @@ export const query = graphql`
       }
     }
   }
-`;
-export default HomePage;
+`
+export default HomePage
